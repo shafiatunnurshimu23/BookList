@@ -26,18 +26,17 @@ public class cse_1st_1st extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cse_1st_1st);
         simpleList2 = (ListView)findViewById(R.id.simpleListView2);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview1st1st, R.id.textView2, book);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview1st1st, R.id.textView4, book);
         simpleList2.setAdapter(arrayAdapter);
         simpleList2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), "Clicked on "+book[position], Toast.LENGTH_LONG).show();
                 if(position==0){
-                    mywebView = (WebView) findViewById(R.id.webview);
+                   mywebView = (WebView) findViewById(R.id.webview);
                     WebSettings webSettings= mywebView.getSettings();
                     webSettings.setJavaScriptEnabled(true);
                     mywebView.loadUrl("https://drive.google.com/open?id=0B4LWZpONsneOZjY2WEFNeEVIVTA");
-
                 }
 
 

@@ -8,11 +8,11 @@
         android:layout_height="50dp"
         android:text="BOOKLIST OF 1ST YEAR 2ND SEMISTER"
         android:textStyle="bold"
+        android:textAlignment="textStart"
         android:gravity="center"
-        android:background="#89ebd3"
+        android:background="#808080"
         android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
-        />
+        android:textSize="18sp" />
 
     <ListView
         android:id="@+id/simpleListView3"
@@ -21,4 +21,8 @@
         android:layout_height="wrap_content"
         android:divider="@color/material_blue_grey_800"
         android:dividerHeight="1dp" />
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

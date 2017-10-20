@@ -2,16 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#808080"
     android:orientation="vertical">
     <TextView
         android:layout_width="379dp"
         android:layout_height="50dp"
         android:text="BOOKLIST OF 2ND YEAR 2ND SEMISTER"
         android:textStyle="bold"
+        android:textAlignment="textStart"
         android:gravity="center"
-        android:background="#89ebd3"
+        android:background="#808080"
         android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
+        android:textSize="18sp"
         />
 
     <ListView

@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class HomeActivity extends Activity
 {
-    // Array of strings...
+
     ListView simpleList;
     String countryList[] = {"CSE","EEE","MECANICAL","BME","ECE","IEM","BECM","TE","ET","LE","URP"};
 

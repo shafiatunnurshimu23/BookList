@@ -14,42 +14,31 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 public class MainActivity extends TabActivity {
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
         TabHost tabHost = (TabHost) findViewById(android.R.id.tabhost);
         TabHost.TabSpec spec;
         Intent intent;
 
-        spec = tabHost.newTabSpec("home");
+        spec = tabHost.newTabSpec("HOME");
         spec.setIndicator("HOME");
-
         intent = new Intent(this, HomeActivity.class);
         spec.setContent(intent);
         tabHost.addTab(spec);
 
-
-
-        spec = tabHost.newTabSpec("Contact");
+        spec = tabHost.newTabSpec("CONTACT");
         spec.setIndicator("CONTACT");
-
         intent = new Intent(this, ContactActivity.class);
         spec.setContent(intent);
         tabHost.addTab(spec);
 
-        spec = tabHost.newTabSpec("About");
+        spec = tabHost.newTabSpec("ABOUT");
         spec.setIndicator("ABOUT");
-
         intent = new Intent(this, AboutActivity.class);
         spec.setContent(intent);
         tabHost.addTab(spec);
-
         tabHost.setCurrentTab(0);
         tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
             @Override
@@ -59,9 +48,6 @@ public class MainActivity extends TabActivity {
             }
         });
 
-
     }
-
-
 
 }
