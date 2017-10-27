@@ -23,7 +23,7 @@ public class LE extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.le);
         simpleList = (ListView)findViewById(R.id.leListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.le_book_listview, R.id.letextView, SEMISTER_LIST);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

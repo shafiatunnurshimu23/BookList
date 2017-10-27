@@ -23,7 +23,7 @@ public class TE extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.te);
         simpleList = (ListView)findViewById(R.id.teListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.te_book_listview, R.id.tetextView, SEMISTER_LIST);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

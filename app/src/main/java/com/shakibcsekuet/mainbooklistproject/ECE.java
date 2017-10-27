@@ -23,7 +23,7 @@ public class ECE extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ece);
         simpleList = (ListView)findViewById(R.id.eceListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.ece_book_listview, R.id.ecetextView, SEMISTER_LIST);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -23,7 +23,7 @@ public class ET extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.et);
         simpleList = (ListView)findViewById(R.id.etListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.et_book_listview, R.id.ettextView, SEMISTER_LIST);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

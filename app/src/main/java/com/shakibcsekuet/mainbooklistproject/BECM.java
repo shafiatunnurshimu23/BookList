@@ -23,7 +23,7 @@ public class BECM extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.becm);
         simpleList = (ListView)findViewById(R.id.becmListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.becm_book_listview, R.id.becmtextView, SEMISTER_LIST);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

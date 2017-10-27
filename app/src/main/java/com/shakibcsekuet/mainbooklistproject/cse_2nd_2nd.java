@@ -22,7 +22,7 @@ public class cse_2nd_2nd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cse_2nd_2nd);
         simpleList2 = (ListView)findViewById(R.id.simpleListView5);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview2nd2nd, R.id.textView4, book);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, book);
         simpleList2.setAdapter(arrayAdapter);
         simpleList2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

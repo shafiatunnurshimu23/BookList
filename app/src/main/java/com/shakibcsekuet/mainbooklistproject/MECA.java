@@ -23,7 +23,7 @@ public class MECA extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.meca);
         simpleList = (ListView)findViewById(R.id.mecaListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.meca_book_listview, R.id.mecatextView, SEMISTER_LIST);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

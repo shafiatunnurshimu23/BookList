@@ -23,7 +23,7 @@ public class CIVIL extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.civil);
         simpleList = (ListView)findViewById(R.id.civilListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.civil_book_listview, R.id.civiltextView, SEMISTER_LIST);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

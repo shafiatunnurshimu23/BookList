@@ -2,16 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/image"
     android:orientation="vertical">
     <TextView
         android:layout_width="379dp"
         android:layout_height="50dp"
-        android:text="BOOKLIST of BECM"
-        android:textStyle="bold"
+        android:text="BOOKLIST OF BECM"
+        android:textStyle="italic|bold"
         android:gravity="center"
-        android:background="#89ebd3"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
+        android:textColor="#87ceeb"
+        android:textSize="30sp"
         />
 
     <ListView

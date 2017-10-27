@@ -17,7 +17,7 @@ public class HomeActivity extends Activity
 {
 
     ListView simpleList;
-    String deptlist[] = {"CSE","EEE","MECANICAL","BME","ECE","IEM","BECM","TE","ET","LE","URP","Programming Section"};
+    String deptlist[] = {"Programming Section","CSE","EEE","MECANICAL","CIVIL","BME","ECE","IEM","BECM","TE","ET","LE","URP"};
 
     @Override   protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);      setContentView(R.layout.activity_home);
@@ -27,7 +27,7 @@ public class HomeActivity extends Activity
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), " Clicked on :: "+position+ deptlist[position], Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), " Clicked on :: "+ deptlist[position], Toast.LENGTH_LONG).show();
                 if(deptlist[position]=="CSE"){
                     Intent intent = new Intent(getApplicationContext(), CSE.class);
                     startActivity(intent);

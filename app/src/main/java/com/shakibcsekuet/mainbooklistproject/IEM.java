@@ -23,7 +23,7 @@ public class IEM extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.iem);
         simpleList = (ListView)findViewById(R.id.iemListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.iem_book_listview, R.id.iemtextView, SEMISTER_LIST);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

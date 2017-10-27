@@ -21,14 +21,14 @@ public class Programming_Section extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.programming_section);
         simpleList = (ListView)findViewById(R.id.simpleListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_programming_section_listview, R.id.textView, deptlist);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_home_listview, R.id.textView, deptlist);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(), " Clicked on :: " +deptlist[position], Toast.LENGTH_LONG).show();
                 if(deptlist[position]=="এলগোরিদম"){
-                    Intent intent = new Intent(getApplicationContext(), CSE.class);
+                    Intent intent = new Intent(getApplicationContext(), algorithm.class);
                     startActivity(intent);
                 }
                 else if(deptlist[position]=="লিংকড লিস্ট (Linked List)"){

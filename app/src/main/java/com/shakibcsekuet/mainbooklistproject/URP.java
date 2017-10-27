@@ -23,7 +23,7 @@ public class URP extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.urp);
         simpleList = (ListView)findViewById(R.id.urpListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.urp_book_listview, R.id.urptextView, SEMISTER_LIST);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

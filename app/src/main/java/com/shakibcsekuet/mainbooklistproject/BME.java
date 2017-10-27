@@ -23,7 +23,7 @@ public class BME extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bme);
         simpleList = (ListView)findViewById(R.id.bmeListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.bme_book_listview, R.id.bmetextView, SEMISTER_LIST);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

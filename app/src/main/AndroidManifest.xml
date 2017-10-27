@@ -70,7 +70,8 @@
         <activity android:name=".URP" />
         <activity android:name=".BECM" />
         <activity android:name=".ET" />
-        <activity android:name=".LE"></activity>
+        <activity android:name=".LE" />
+        <activity android:name=".algorithm"></activity>
     </application>
 
 </manifest>

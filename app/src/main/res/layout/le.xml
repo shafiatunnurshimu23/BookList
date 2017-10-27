@@ -6,14 +6,13 @@
     <TextView
         android:layout_width="379dp"
         android:layout_height="50dp"
-        android:text="BOOKLIST of LEATHER ENGINEERING"
-        android:textStyle="bold"
+        android:text="BOOKLIST OF LE"
+        android:textStyle="italic|bold"
         android:gravity="center"
-        android:background="#89ebd3"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="30sp"
         />
-
     <ListView
         android:id="@+id/leListView"
         android:background="#92d3ed"
