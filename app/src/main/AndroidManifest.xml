@@ -54,6 +54,9 @@
         <activity
             android:name=".cse_4th_2nd"
             android:label="CSE" />
+        <activity
+            android:name=".Programming_Section"
+            android:label="Programming Section" />
         <activity android:name=".EEE" />
         <activity android:name=".MECA" />
         <activity
