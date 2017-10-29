@@ -6,7 +6,7 @@
 
     <TextView
         android:id="@+id/text"
-        android:text="এলগোরিদম"
+        android:text="Linked list"
         android:background="@drawable/image2"
         android:gravity="center"
         android:textSize="30sp"

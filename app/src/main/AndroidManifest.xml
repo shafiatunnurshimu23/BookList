@@ -57,6 +57,9 @@
         <activity
             android:name=".Programming_Section"
             android:label="Programming Section" />
+        <activity
+            android:name=".data_structure"
+            android:label="data_structure" />
         <activity android:name=".EEE" />
         <activity android:name=".MECA" />
         <activity
@@ -71,7 +74,10 @@
         <activity android:name=".BECM" />
         <activity android:name=".ET" />
         <activity android:name=".LE" />
-        <activity android:name=".algorithm"></activity>
+        <activity android:name=".algorithm" />
+        <activity android:name=".Linked_List" />
+        <activity android:name=".webbrowser"
+            android:label="Web Browser"></activity>
     </application>
 
 </manifest>

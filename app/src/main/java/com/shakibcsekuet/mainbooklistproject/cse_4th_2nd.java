@@ -28,7 +28,24 @@ public class cse_4th_2nd extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), "Clicked on "+book[position], Toast.LENGTH_LONG).show();
+                if(position==0){
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5MG54Y0NPQXRTdDg";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_4th_2nd.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
 
+                }
+                else if(position==1){
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5SU8taENySmlRZFU";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_4th_2nd.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
+
+                }
 
 
 
