@@ -32,34 +32,49 @@ public class cse_1st_2nd extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), "Clicked on "+book[position]+"...wait", Toast.LENGTH_LONG).show();
                 if(position==0){
-                    mywebView = (WebView) findViewById(R.id.webview);
-                    WebSettings webSettings= mywebView.getSettings();
-                    webSettings.setJavaScriptEnabled(true);
-                    mywebView.loadUrl("https://drive.google.com/open?id=0B1ON83FyGCF5YjFXOUpDVUxHV2c");
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5YjFXOUpDVUxHV2c";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_1st_2nd.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
+
                 }
                 else if(position==1){
-                    mywebView = (WebView) findViewById(R.id.webview);
-                    WebSettings webSettings= mywebView.getSettings();
-                    webSettings.setJavaScriptEnabled(true);
-                    mywebView.loadUrl("https://drive.google.com/open?id=0B1ON83FyGCF5bUYxTjVoYmVVYzQ");
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5bUYxTjVoYmVVYzQ";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_1st_2nd.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
+
                 }
                 else if(position==2){
-                    mywebView = (WebView) findViewById(R.id.webview);
-                    WebSettings webSettings= mywebView.getSettings();
-                    webSettings.setJavaScriptEnabled(true);
-                    mywebView.loadUrl("https://drive.google.com/open?id=0B1ON83FyGCF5MUhQRE5Fa2dzQnM");
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5MUhQRE5Fa2dzQnM";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_1st_2nd.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
+
                 }
                 else if(position==3){
-                    mywebView = (WebView) findViewById(R.id.webview);
-                    WebSettings webSettings= mywebView.getSettings();
-                    webSettings.setJavaScriptEnabled(true);
-                    mywebView.loadUrl("https://drive.google.com/open?id=0B1ON83FyGCF5WjB6Z0tBT3p6Njg");
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5WjB6Z0tBT3p6Njg";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_1st_2nd.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
+
                 }
                 else if(position==4){
-                    mywebView = (WebView) findViewById(R.id.webview);
-                    WebSettings webSettings= mywebView.getSettings();
-                    webSettings.setJavaScriptEnabled(true);
-                    mywebView.loadUrl("https://drive.google.com/open?id=0B1ON83FyGCF5RkswakZpbnp0R0k");
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5RkswakZpbnp0R0k";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_1st_2nd.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
+
                 }
             }
         });

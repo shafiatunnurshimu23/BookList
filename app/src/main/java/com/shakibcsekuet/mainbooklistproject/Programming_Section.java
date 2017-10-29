@@ -31,8 +31,12 @@ public class Programming_Section extends Activity {
                     Intent intent = new Intent(getApplicationContext(), algorithm.class);
                     startActivity(intent);
                 }
+                else if(deptlist[position]=="ডাটা স্ট্রাকচার"){
+                    Intent intent = new Intent(getApplicationContext(), data_structure.class);
+                    startActivity(intent);
+                }
                 else if(deptlist[position]=="লিংকড লিস্ট (Linked List)"){
-                    Intent intent = new Intent(getApplicationContext(), EEE.class);
+                    Intent intent = new Intent(getApplicationContext(), Linked_List.class);
                     startActivity(intent);
                 }
                 else if(deptlist[position]=="স্ট্যাক (Stack)"){

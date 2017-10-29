@@ -76,7 +76,7 @@ public class HomeActivity extends Activity
                     Intent intent = new Intent(getApplicationContext(), URP.class);
                     startActivity(intent);
                 }
-                else if(position==11){
+                else if(deptlist[position]=="Programming Section"){
                     Intent intent = new Intent(getApplicationContext(), Programming_Section.class);
                     startActivity(intent);
                 }
