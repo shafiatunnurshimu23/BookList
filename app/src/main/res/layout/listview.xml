@@ -6,11 +6,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:background="@drawable/back"
         android:layout_width="fill_parent"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="@dimen/activity_horizontal_margin"
         android:textSize="20sp"
-        android:textColor="#000" />
+        android:textColor="#fff" />
 </LinearLayout>

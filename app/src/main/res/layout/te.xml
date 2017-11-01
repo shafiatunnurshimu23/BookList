@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/icon"
     android:orientation="vertical">
     <TextView
         android:layout_width="379dp"
@@ -9,14 +10,12 @@
         android:text="BOOKLIST OF TE"
         android:textStyle="italic|bold"
         android:gravity="center"
-        android:background="#000"
-        android:textColor="#fff"
+        android:textColor="#87ceeb"
         android:textSize="30sp"
         />
-
     <ListView
-        android:id="@+id/teListView"
-        android:background="#92d3ed"
+        android:id="@+id/telistView"
+        android:textColor="#fff"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:divider="@color/material_blue_grey_800"

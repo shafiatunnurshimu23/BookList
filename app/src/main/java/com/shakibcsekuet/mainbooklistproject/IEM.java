@@ -22,7 +22,7 @@ public class IEM extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.iem);
-        simpleList = (ListView)findViewById(R.id.iemListView);
+        simpleList = (ListView)findViewById(R.id.iemlistView);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, SEMISTER_LIST);
         simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
