@@ -5,21 +5,26 @@ package com.shakibcsekuet.mainbooklistproject;
  */
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import static com.shakibcsekuet.mainbooklistproject.R.styleable.FloatingActionButton;
+
 public class HomeActivity extends Activity
 {
 
     ListView simpleList;
-    String deptlist[] = {"Programming Section","CSE","EEE","MECANICAL","CIVIL","BME","ECE","IEM","BECM","TE","ET","LE","URP"};
+    //,"EEE","MECANICAL","CIVIL","BME","ECE","IEM","BECM","TE","ET","LE","URP"
+    String deptlist[] = {"Programming Section","CSE"};
 
     @Override   protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);      setContentView(R.layout.activity_home);
@@ -27,8 +32,11 @@ public class HomeActivity extends Activity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+
+
+                Intent intent = new Intent(HomeActivity.this, database_MainActivity.class);
+                startActivity(intent);
             }
         });
         simpleList = (ListView)findViewById(R.id.simpleListView);
@@ -42,7 +50,11 @@ public class HomeActivity extends Activity
                     Intent intent = new Intent(getApplicationContext(), CSE.class);
                     startActivity(intent);
                 }
-                else if(deptlist[position]=="EEE"){
+                else if(deptlist[position]=="Programming Section"){
+                    Intent intent = new Intent(getApplicationContext(), Programming_Section.class);
+                    startActivity(intent);
+                }
+                /*else if(deptlist[position]=="EEE"){
                     Intent intent = new Intent(getApplicationContext(), EEE.class);
                     startActivity(intent);
                 }
@@ -86,11 +98,21 @@ public class HomeActivity extends Activity
                     Intent intent = new Intent(getApplicationContext(), URP.class);
                     startActivity(intent);
                 }
-                else if(deptlist[position]=="Programming Section"){
-                    Intent intent = new Intent(getApplicationContext(), Programming_Section.class);
-                    startActivity(intent);
-                }
+                */
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setTitle("Really Exit?")
+                .setMessage("Are you sure you want to exit?")
+                .setNegativeButton(android.R.string.no, null)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        HomeActivity.super.onBackPressed();
+                    }
+                }).create().show();
     }
 }

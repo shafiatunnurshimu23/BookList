@@ -15,7 +15,7 @@ import android.widget.Toast;
  */
 public class Programming_Section extends Activity {
     ListView simpleList;
-    String deptlist[] = {"এলগোরিদম","ডাটা স্ট্রাকচার","লিংকড লিস্ট (Linked List)","স্ট্যাক (Stack)","কিউ (Queue)","ট্রি (Tree)","বাইনারী সার্চ ট্রি (Binary Search Tree)","হ্যাশটেবিল (HashTable)","ডিসজয়েন্ট সেট (Disjoind Set)","ট্রাই ট্রি (Trie)","সেগমেন্ট ট্রি (Segment Tree)"};
+    String deptlist[] = {"এলগোরিদম","ডাটা স্ট্রাকচার","লিংকড লিস্ট (Linked List)","স্ট্যাক (Stack)","কিউ (Queue)","ট্রি (Tree)","বাইনারী সার্চ ট্রি (Binary Search Tree)","হ্যাশটেবিল (HashTable)","ডিসজয়েন্ট সেট (Disjoint Set)","ট্রাই ট্রি (Trie)","সেগমেন্ট ট্রি (Segment Tree)"};
 
     @Override   protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,37 +40,56 @@ public class Programming_Section extends Activity {
                     startActivity(intent);
                 }
                 else if(deptlist[position]=="স্ট্যাক (Stack)"){
-                    Intent intent = new Intent(getApplicationContext(), MECA.class);
+                    Intent intent = new Intent(getApplicationContext(), stack.class);
                     startActivity(intent);
                 }
                 else if(deptlist[position]=="কিউ (Queue)"){
-                    Intent intent = new Intent(getApplicationContext(), CIVIL.class);
+                    Intent intent = new Intent(getApplicationContext(), Queue.class);
                     startActivity(intent);
                 }
                 else if(deptlist[position]=="ট্রি (Tree)"){
-                    Intent intent = new Intent(getApplicationContext(), BME.class);
-                    startActivity(intent);
+                    String s="http://hellohasan.com/category/data-structure/tree/tree-basic-concept/";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(Programming_Section.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
                 }
                 else if(deptlist[position]=="বাইনারী সার্চ ট্রি (Binary Search Tree)"){
-                    Intent intent = new Intent(getApplicationContext(), ECE.class);
-                    startActivity(intent);
+                    String s="http://hellohasan.com/category/data-structure/tree/binary-search-tree-bst";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(Programming_Section.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
                 }
                 else if(deptlist[position]=="হ্যাশটেবিল (HashTable)"){
-                    Intent intent = new Intent(getApplicationContext(), IEM.class);
-                    startActivity(intent);
+                    String s="http://ami-alavola.rhcloud.com/?p=198";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(Programming_Section.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
+
+
                 }
-                else if(deptlist[position]=="ডিসজয়েন্ট সেট (Disjoind Set)"){
-                    Intent intent = new Intent(getApplicationContext(), BECM.class);
-                    startActivity(intent);
+                else if(deptlist[position]=="ডিসজয়েন্ট সেট (Disjoint Set)"){
+                    String s="http://www.shafaetsplanet.com/planetcoding/?p=763";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(Programming_Section.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
                 }
                 else if(deptlist[position]=="ট্রাই ট্রি (Trie)"){
-                    Intent intent = new Intent(getApplicationContext(), TE.class);
+                    Intent intent = new Intent(getApplicationContext(), Trie.class);
                     startActivity(intent);
                 }
                 else if(deptlist[position]=="সেগমেন্ট ট্রি (Segment Tree)"){
-                    Intent intent = new Intent(getApplicationContext(), ET.class);
+                    Intent intent = new Intent(getApplicationContext(), Segment_Tree.class);
                     startActivity(intent);
                 }
+
 
             }
         });

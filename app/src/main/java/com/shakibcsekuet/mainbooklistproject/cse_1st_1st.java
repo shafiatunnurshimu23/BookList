@@ -33,10 +33,7 @@ public class cse_1st_1st extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), "Clicked on "+book[position], Toast.LENGTH_LONG).show();
                 if(position==0){
-                   mywebView = (WebView) findViewById(R.id.webview);
-                    WebSettings webSettings= mywebView.getSettings();
-                    webSettings.setJavaScriptEnabled(true);
-                    mywebView.loadUrl("https://drive.google.com/open?id=0B4LWZpONsneOZjY2WEFNeEVIVTA");
+
                 }
 
 

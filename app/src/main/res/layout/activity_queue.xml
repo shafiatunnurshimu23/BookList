@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/icon">
+
+    <TextView
+        android:id="@+id/text"
+        android:text="Queue"
+        android:background="@drawable/image2"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="italic|bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+    <ListView
+        android:layout_below="@+id/text"
+        android:id="@+id/simpleListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/material_blue_grey_800"
+        android:dividerHeight="1dp" />
+
+
+</RelativeLayout>

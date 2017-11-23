@@ -21,15 +21,58 @@ public class cse_3rd_1st extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cse_3rd_1st);
-        simpleList2 = (ListView)findViewById(R.id.simpleListView6);
+        simpleList2 = (ListView)findViewById(R.id.simpleListView2);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.listview, R.id.textView, book);
         simpleList2.setAdapter(arrayAdapter);
         simpleList2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), "Clicked on "+book[position], Toast.LENGTH_LONG).show();
+                if(position==0){
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5dnAwamx5VFVPUzQ";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_3rd_1st.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
 
+                }
+                else if(position==1){
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5anlnZ3hWb25lQ2M";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_3rd_1st.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
 
+                }
+                else if(position==2){
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5VTNjcHk1LUhaWjA";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_3rd_1st.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
+
+                }
+                else if(position==3){
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5WW1sYndVUE9RSXM";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_3rd_1st.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
+
+                }
+                else if(position==4){
+                    String s="https://drive.google.com/open?id=0B1ON83FyGCF5eHE5MEFSekNRMU0";
+                    Bundle basket= new Bundle();
+                    basket.putString("abc", s);
+                    Intent a=new Intent(cse_3rd_1st.this,webbrowser.class);
+                    a.putExtras(basket);
+                    startActivity(a);
+
+                }
 
 
             }
