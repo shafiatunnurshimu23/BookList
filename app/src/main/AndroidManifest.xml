@@ -3,21 +3,28 @@
     package="com.shakibcsekuet.mainbooklistproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.shakibcsekuet.mymapsappsdirection.permission.MAPS_RECEIVE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/booklist"
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity
-            android:name=".Logo">
+
+
+        <activity android:name=".Logo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_my" />
@@ -86,7 +93,12 @@
         <activity android:name=".Queue" />
         <activity android:name=".Trie" />
         <activity android:name=".Segment_Tree" />
+        <activity android:name=".UVA" />
+        <activity android:name=".Uvauserinfo" />
+        <activity android:name=".Uvaprobleminfo"></activity>
+
 
     </application>
+
 
 </manifest>

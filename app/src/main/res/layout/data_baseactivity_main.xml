@@ -16,6 +16,7 @@
         android:paddingLeft="8dp"
         android:background="#f9f9f9"/>
 
+
     <EditText
         android:id="@+id/bday"
         android:layout_width="match_parent"
@@ -26,6 +27,7 @@
         android:background="#f9f9f9"
         android:paddingLeft="8dp"
         android:hint="Enter resource's link"/>
+
 
     <Button
         android:id="@+id/save"

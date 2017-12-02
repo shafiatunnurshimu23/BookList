@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class database_MainActivity extends AppCompatActivity   {
 
-    EditText e1,e2;
+    EditText e1,e2,e3,e4;
     Button b1, b2;
 
     @Override
@@ -20,6 +20,8 @@ public class database_MainActivity extends AppCompatActivity   {
 
         e1 = (EditText) findViewById(R.id.name);
         e2 = (EditText) findViewById(R.id.bday);
+       // e3 = (EditText) findViewById(R.id.writer);
+        //e4 = (EditText) findViewById(R.id.dept);
 
         b1 = (Button) findViewById(R.id.save);
         b2 = (Button) findViewById(R.id.show);
@@ -32,6 +34,8 @@ public class database_MainActivity extends AppCompatActivity   {
 
                 String _name = e1.getText().toString();
                 String _bday = e2.getText().toString();
+               // String _writer = e3.getText().toString();
+                //String _dept = e4.getText().toString();
 
                 DataTemp dt = new DataTemp(_name, _bday);
 
@@ -55,3 +59,5 @@ public class database_MainActivity extends AppCompatActivity   {
 
     }
 }
+
+

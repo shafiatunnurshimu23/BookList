@@ -17,6 +17,9 @@ public class MyDBFunctions extends SQLiteOpenHelper {
     private static final String TAB_ID = "id";
     private static final String TAB_NAME = "name";
     private static final String TAB_DAYS = "days";
+    private static final String TAB_WRITER = "writer";
+    private static final String TAB_DEPT = "dept";
+
 
 
     MyDBFunctions(Context c){
@@ -46,6 +49,8 @@ public class MyDBFunctions extends SQLiteOpenHelper {
         ContentValues cv = new ContentValues();
         cv.put(TAB_NAME, dt.getName());
         cv.put(TAB_DAYS, dt.getDay());
+       // cv.put(TAB_WRITER, dt.getwrit());
+        //cv.put(TAB_DEPT, dt.get_dept());
 
         sqd.insert(TABLE_NAME, null, cv);
         sqd.close();
@@ -70,7 +75,7 @@ public class MyDBFunctions extends SQLiteOpenHelper {
         if(c.moveToFirst()){
             int counter = 0 ;
             do {
-                recvied_data[counter] = c.getString(c.getColumnIndex(TAB_NAME+"")) +"\nBirthday: "+
+                recvied_data[counter] = c.getString(c.getColumnIndex(TAB_NAME+"")) +"\nResources's link: "+
                 c.getString(c.getColumnIndex(TAB_DAYS+""));
                 counter = counter+1;
 
