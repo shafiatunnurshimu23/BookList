@@ -13,7 +13,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/activity_main"
+
         android:hint="Enter the Uva problem id"
         android:inputType="numberDecimal"
         android:id="@+id/Etext"
