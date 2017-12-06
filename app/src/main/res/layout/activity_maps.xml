@@ -32,53 +32,53 @@
 
         android:orientation="vertical">
 
-        <Button
+          <Button
 
-            android:id="@+id/btnRestaurant"
+              android:id="@+id/btnRestaurant"
 
-            android:layout_width="wrap_content"
+              android:layout_width="wrap_content"
 
-            android:layout_height="wrap_content"
+              android:layout_height="wrap_content"
 
-            android:text="Nearby Restaurants" />
+              android:text="Nearby Restaurants" />
 
-        <Button
+          <Button
 
-            android:id="@+id/btnHospital"
+              android:id="@+id/btnHospital"
 
-            android:layout_width="wrap_content"
+              android:layout_width="wrap_content"
 
-            android:layout_height="wrap_content"
+              android:layout_height="wrap_content"
 
-            android:text="Nearby Hospitals" />
+              android:text="Nearby Hospitals" />
 
-        <Button
+          <Button
 
-            android:id="@+id/btnSchool"
+              android:id="@+id/btnSchool"
 
-            android:layout_width="wrap_content"
+              android:layout_width="wrap_content"
 
-            android:layout_height="wrap_content"
+              android:layout_height="wrap_content"
 
-            android:text="Nearby Schools" />
-        <Button
+              android:text="Nearby Schools" />
+          <Button
 
-            android:id="@+id/btnPharmacies"
+              android:id="@+id/btnPharmacies"
 
-            android:layout_width="wrap_content"
+              android:layout_width="wrap_content"
 
-            android:layout_height="wrap_content"
+              android:layout_height="wrap_content"
 
-            android:text="Nearby Pharmacies" />
-        <Button
+              android:text="Nearby Pharmacies" />
+          <Button
 
-            android:id="@+id/btnlibrary"
+              android:id="@+id/btnlibrary"
 
-            android:layout_width="wrap_content"
+              android:layout_width="wrap_content"
 
-            android:layout_height="wrap_content"
+              android:layout_height="wrap_content"
 
-            android:text="Nearby Library" />
+              android:text="Nearby Library" />
 
-    </LinearLayout>
-</FrameLayout>
+      </LinearLayout>
+  </FrameLayout>

@@ -24,7 +24,7 @@ public class HomeActivity extends Activity
 
     ListView simpleList;
     //,"EEE","MECANICAL","CIVIL","BME","ECE","IEM","BECM","TE","ET","LE","URP"
-    String deptlist[] = {"Programming Section","CSE","UVA online judge","Google Maps"};
+    String deptlist[] = {"Programming Section","CSE","UVA online judge","Google Maps","Google Maps search nearby"};
 
     @Override   protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);      setContentView(R.layout.activity_home);
@@ -59,9 +59,13 @@ public class HomeActivity extends Activity
                     Intent intent = new Intent(getApplicationContext(), UVA.class);
                     startActivity(intent);
                 }
-
-
                 else if(deptlist[position]=="Google Maps"){
+                    Intent intent = new Intent(getApplicationContext(), MapsActivity2.class);
+                    startActivity(intent);
+                }
+
+
+                else if(deptlist[position]=="Google Maps search nearby"){
                     Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
                     startActivity(intent);
                 }

@@ -75,7 +75,7 @@ public class MyDBFunctions extends SQLiteOpenHelper {
         if(c.moveToFirst()){
             int counter = 0 ;
             do {
-                recvied_data[counter] = c.getString(c.getColumnIndex(TAB_NAME+"")) +"\nResources's link: "+
+                recvied_data[counter] = c.getString(c.getColumnIndex(TAB_NAME+"")) +"\nWriter's name: "+
                 c.getString(c.getColumnIndex(TAB_DAYS+""));
                 counter = counter+1;
 
