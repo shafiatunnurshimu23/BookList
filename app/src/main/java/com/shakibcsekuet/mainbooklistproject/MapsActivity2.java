@@ -51,8 +51,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
 
     public void onMapReady(GoogleMap googleMap) {
 
-        // Add polylines and polygons to the map. This section shows just
-        // a single polyline. Read the rest of the tutorial to learn more.
+
         Polyline polyline1 = googleMap.addPolyline(new PolylineOptions()
                 .clickable(true)
                 .add(
@@ -63,11 +62,13 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
                         new LatLng(23.734013, 90.392698),
                         new LatLng(24.924090, 91.832672)));
 
+        //MarkerOptions options=new MarkerOptions().title("points here").position(new LatLng(22.900586, 89.502351));
+        //mMap.addMarker(options);
+
         // Position the map's camera near Alice Springs in the center of Australia,
-        // and set the zoom factor so most of Australia shows on the screen.
+        // and set the zoom factor so most of Australia shows on the screen.zz
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(22.900586, 89.502351), 4));
-        MarkerOptions options=new MarkerOptions().title("points here").position(new LatLng(22.900586, 89.502351));
-        mMap.addMarker(options);
+
 
         // Set listeners for click events.
         googleMap.setOnPolylineClickListener(this);
@@ -81,8 +82,6 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
 
     @Override
     public void onPolylineClick(Polyline polyline) {
-
-
 
     }
 }

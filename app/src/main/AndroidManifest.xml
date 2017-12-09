@@ -85,8 +85,8 @@
             android:name=".webbrowser"
             android:label="Web Browser" />
         <activity android:name=".database_MainActivity" />
-        <activity android:name=".BirthdayOfFriends" />
-        <activity android:name=".SingleBDay" />
+        <activity android:name=".booklist_database_show" />
+        <activity android:name=".Edit_booklist_data" />
         <activity android:name=".stack" />
         <activity android:name=".Queue" />
         <activity android:name=".Trie" />

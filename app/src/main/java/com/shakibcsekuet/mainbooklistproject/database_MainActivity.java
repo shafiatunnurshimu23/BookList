@@ -51,7 +51,7 @@ public class database_MainActivity extends AppCompatActivity   {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), BirthdayOfFriends.class));
+                startActivity(new Intent(getApplicationContext(), booklist_database_show.class));
             }
         });
 
